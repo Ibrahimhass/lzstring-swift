@@ -497,7 +497,7 @@ private func _decompress(length: Int, resetValue: Int, nextValue: @escaping GetN
         } else {
             if c == dictSize {
                 var tmp = Array(w)
-                tmp.append(entry[0])
+                tmp.append(tmp[0])
                 entry = tmp
             } else {
                 return ""
